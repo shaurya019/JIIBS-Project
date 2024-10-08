@@ -21,7 +21,7 @@ export default function Home() {
     <div className="divide-y">
       <NavBar toggleSideBar={toggleSideBar} sideBar={sideBar} />
       <main className="flex flex-grow md:divide-x">
-        <SideBar togglePanel={togglePanel}  sideBar={sideBar}/>
+        <SideBar sideBar={sideBar}/>
         <People togglePanel={togglePanel} sideBar={sideBar}/>
       </main>
       <SidePanel togglePanel={togglePanel} isOpen={isOpen} />

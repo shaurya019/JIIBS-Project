@@ -9,11 +9,10 @@ import Marketplace from "../../assets/Images/Marketplace"
 import Help from "../../assets/Images/Question"
 
 interface SideBarProps {
-    togglePanel: () => void;
     sideBar: boolean;
 }
 
-export const SideBar: React.FC<SideBarProps> = ({ togglePanel, sideBar }) => {
+export const SideBar: React.FC<SideBarProps> = ({sideBar }) => {
     return (
         <div className={` ${sideBar ? "block" : "hidden"} z-10 md:block md:w-1/6 lg:1/6 sticky top-20  w-[100vw] h-full py-10 pl-6`}>
 
